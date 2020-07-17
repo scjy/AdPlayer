@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AdView">
+        <attr name="ad_override_loading_layout" format="reference" />
+        <attr name="ad_override_error_layout" format="reference" />
+        <attr name="ad_background_color" format="color" />
+        <attr name="ad_enable_image_anim" format="boolean" />
+        <attr name="ad_enable_video_anim" format="boolean" />
+        <attr name="ad_image_scale_type" format="enum">
+            <enum name="centerCrop" value="0" />
+            <enum name="fitCenter" value="1" />
+            <enum name="center" value="2" />
+            <enum name="fitXY" value="3" />
+            <enum name="centerInside" value="4" />
+        </attr>
+        <attr name="ad_video_aspect_ratio" format="enum">
+            <enum name="ratio_16_9" value="0" />
+            <enum name="ratio_4_3" value="1" />
+            <enum name="ratio_match_parent" value="2" />
+            <enum name="ratio_fill_parent" value="3" />
+            <enum name="ratio_fit_parent" value="4" />
+            <enum name="ratio_origin" value="5" />
+            <enum name="ratio_fill_width" value="6" />
+            <enum name="ratio_fill_height" value="7" />
+        </attr>
+
+    </declare-styleable>
+
+
+</resources>

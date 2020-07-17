@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.licheedev.adplayer.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        app:ad_background_color="#000000"
+        app:ad_enable_image_anim="false"
+        app:ad_enable_video_anim="false"
+        app:ad_image_scale_type="fitXY"
+        app:ad_video_aspect_ratio="ratio_match_parent" />
+    <!--app:override_error_layout="@layout/custom_error"-->
+    <!--app:override_loading_layout="@layout/custom_loading" -->
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_height="wrap_content"
+            android:text="重新设置"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_height="wrap_content"
+            android:text="播放下一个"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_height="wrap_content"
+            android:text="暂停"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_resume"
+            android:layout_height="wrap_content"
+            android:text="恢复"
+            app:layout_columnWeight="1" />
+
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_height="wrap_content"
+            android:text="播放"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_height="wrap_content"
+            android:text="停止"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_jump_activity"
+            android:layout_height="wrap_content"
+            android:text="跳转页面"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="12sp" />
+    </ScrollView>
+
+</LinearLayout>
